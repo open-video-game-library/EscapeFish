@@ -85,17 +85,23 @@ public class Dive : MonoBehaviour
             this.GetComponent<Rigidbody2D>().gravityScale = 0f;
         }
 
+        
+    }
+
+    void LateUpdate()
+    {
         if (catchedup == true)
         {
-            if(transform.childCount >= 1)
+            if (transform.childCount >= 1)
             {
-                transform.GetChild(0).transform.position = this.transform.position;
-                transform.GetChild(0).transform.position -= new Vector3(0, 0.5f, 0);
+
+                transform.GetChild(4).transform.position = this.transform.position;
+                transform.GetChild(4).transform.position -= new Vector3(0, 0.5f, 0);
             }
         }
     }
 
-    bool catchedup;
+        bool catchedup;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

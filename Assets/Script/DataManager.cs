@@ -5,9 +5,9 @@ using System.Runtime.InteropServices;
 
 public class DataManager : MonoBehaviour
 {
-    // ‚à‚µWebGL”Å‚Ìê‡‚ÍAJavaScript‘¤‚Å“®‚­ŠÖ”‚ğæ“¾‚·‚é
-    // addData ¨ 1s‚²‚Æ‚Éjs‚Éƒf[ƒ^‚ğ‘—M‚·‚éŠÖ”
-    // downloadData ¨ ”CˆÓ‚Ìs‚ªI‚í‚Á‚½‚Ì‚¿Acsvƒf[ƒ^‚ğƒ_ƒEƒ“ƒ[ƒh‚·‚éŠÖ”
+    // ï¿½ï¿½ï¿½ï¿½WebGLï¿½Å‚Ìê‡ï¿½ÍAJavaScriptï¿½ï¿½ï¿½Å“ï¿½ï¿½ï¿½ï¿½Öï¿½ï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½
+    // addData ï¿½ï¿½ 1ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Æ‚ï¿½jsï¿½Éƒfï¿½[ï¿½^ï¿½ğ‘—Mï¿½ï¿½ï¿½ï¿½Öï¿½
+    // downloadData ï¿½ï¿½ ï¿½Cï¿½Ó‚Ìï¿½ï¿½sï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½ï¿½Acsvï¿½fï¿½[ï¿½^ï¿½ï¿½ï¿½_ï¿½Eï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½hï¿½ï¿½ï¿½ï¿½Öï¿½
 #if UNITY_WEBGL && !UNITY_EDITOR
      [DllImport("__Internal")]
      private static extern void addData(string jsonData);
@@ -16,32 +16,32 @@ public class DataManager : MonoBehaviour
      private static extern void downloadData();
 #endif
 
-    // æ“¾‚·‚éƒf[ƒ^‚ÌƒNƒ‰ƒX‚ğ’è‹`
-    // Escape-Fish‚Ìê‡‚ÍuƒXƒRƒAscorevuŠl“¾‹›”vuƒ_ƒ[ƒW”v
+    // ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½fï¿½[ï¿½^ï¿½ÌƒNï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½`
+    // Escape-Fishï¿½Ìê‡ï¿½Íuï¿½Xï¿½Rï¿½Ascoreï¿½vï¿½uï¿½lï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½uï¿½_ï¿½ï¿½ï¿½[ï¿½Wï¿½ï¿½ï¿½v
     [System.Serializable]
     public class Data
     {
         public int score;
-        public int hit_num;
-        public float hit_rate;
+        public int getFish;
+        public float pressButtonMany;
     }
 
-    // s‚ªI‚í‚Á‚½‚Æ‚«‚ÉŒÄ‚Ño‚·ŠÖ”
-    // Hunter-Chameleon‚Å‚ÍAƒQ[ƒ€I—¹‚Ì‚Æ‚«‚ÉuƒXƒRƒAvuƒqƒbƒg”vuƒgƒŠƒK[‚ğˆø‚¢‚½”v‚ğˆø”‚Æ‚µ‚Ä‚±‚ÌŠÖ”‚ğŒÄ‚Ño‚µ‚Ä‚¢‚Ü‚·
-    // ƒQ[ƒ€‚É‰‚¶‚Ä•ª‚©‚è‚â‚·‚¢•Ï”–¼‚É‚µ‚Ä‚­‚¾‚³‚¢
+    // ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½ÉŒÄ‚Ñoï¿½ï¿½ï¿½Öï¿½
+    // Hunter-Chameleonï¿½Å‚ÍAï¿½Qï¿½[ï¿½ï¿½ï¿½Iï¿½ï¿½ï¿½Ì‚Æ‚ï¿½ï¿½Éuï¿½Xï¿½Rï¿½Aï¿½vï¿½uï¿½qï¿½bï¿½gï¿½ï¿½ï¿½vï¿½uï¿½gï¿½ï¿½ï¿½Kï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½Ä‚ï¿½ï¿½ÌŠÖï¿½ï¿½ï¿½ï¿½Ä‚Ñoï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½
+    // ï¿½Qï¿½[ï¿½ï¿½ï¿½É‰ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½ï¿½ï¿½ï¿½â‚·ï¿½ï¿½ï¿½Ïï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public void postData(int _score, int _get_Fish, int _pressButtonMany)
     {
-        Data data = new Data(); // ƒNƒ‰ƒX‚ğ¶¬
-        data.score = _score; // ƒXƒRƒA
-        data.hit_num = _get_Fish; // ƒqƒbƒg”
-        data.hit_rate = _pressButtonMany; // ƒqƒbƒg—¦
-        string json = JsonUtility.ToJson(data); // jsonŒ`®‚É•ÏŠ·‚µ‚Äjs‚É“n‚·
+        Data data = new Data(); // ï¿½Nï¿½ï¿½ï¿½Xï¿½ğ¶ï¿½
+        data.score = _score; // ï¿½Xï¿½Rï¿½A
+        data.getFish = _get_Fish; // ï¿½qï¿½bï¿½gï¿½ï¿½
+        data.pressButtonMany = _pressButtonMany; // ï¿½qï¿½bï¿½gï¿½ï¿½
+        string json = JsonUtility.ToJson(data); // jsonï¿½`ï¿½ï¿½ï¿½É•ÏŠï¿½ï¿½ï¿½ï¿½ï¿½jsï¿½É“nï¿½ï¿½
 #if UNITY_WEBGL && !UNITY_EDITOR
-         addData(json);
+        addData(json);
 #endif
     }
 
-    // ƒ_ƒEƒ“ƒ[ƒhƒ{ƒ^ƒ“‚ğ‰Ÿ‚µ‚½‚Æ‚«‚ÉŒÄ‚Ño‚·ŠÖ”
+    // ï¿½_ï¿½Eï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½hï¿½{ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½ÉŒÄ‚Ñoï¿½ï¿½ï¿½Öï¿½
     public void getData()
     {
 #if UNITY_WEBGL && !UNITY_EDITOR

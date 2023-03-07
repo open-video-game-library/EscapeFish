@@ -96,6 +96,10 @@ using UnityEngine;
         {
             this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f + Mathf.Cos(Time.frameCount/5) / 2);
         }
+        else
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+        }
         //serialHandler_ingame.OnDataReceivedd += OnDataReceivedd;
         int ObjCount = this.transform.childCount;
             Vector3 iu = this.transform.position;
@@ -107,55 +111,51 @@ using UnityEngine;
 
             if (Input.GetKey(KeyCode.DownArrow))
             {
-
-                transform.Translate(0, -0.05f * sens1, 0);
+                    transform.Translate(0, -0.05f * sens1, 0);
+                
 
             }
             else if (Input.GetKey(KeyCode.UpArrow))
             {
-                transform.Translate(0, 0.05f * sens1, 0);
+                    transform.Translate(0, 0.05f * sens1, 0);
             }
 
             if (transform.position.y < -3.8f)
             {
-                transform.position = new Vector3(transform.position.x, -3.8f, 0);
+               transform.position = new Vector3(transform.position.x, -3.8f, 0);
             }
-            if (transform.position.y > 3.3f)
+            if (transform.position.y > 2.8f)
             {
-                if (this.gameObject.tag == "Player")
-                {
-                if (this.GetComponent<Collider2D>().enabled == true)
-                    {
-                    transform.position = new Vector3(transform.position.x, 3.3f, 0);
-                    }
-                }
-            }
+               transform.position = new Vector3(transform.position.x, 2.8f, 0);
+        }
 
+            //.GetComponent<Animator>().Play("Recoil", 0, 0f);
 
-
-            if (rb2d.velocity.x > -10f)//ここながれ
+        if (rb2d.velocity.x > -10f)//ここながれ
             {
-                if (muteki == false) //無敵時間じゃなかったら
+                if(muteki == false)
                 {
                     rb2d.AddForce(new Vector3(-3 * sens3, 0, 0));
                 }
+                    
             }
 
-
-            if (rb2d.velocity.x < 10f)//ここながれ
+        GetComponent<Animator>().GetComponent<Animator>().SetBool("Fish", false);
+        if (rb2d.velocity.x < 10f)//ここながれ
             {
-
-                if (muteki == false) //無敵時間じゃなかったら
-                {
                     //流れの大きさ
                     if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.RightArrow))
                     {
-                        //一回の移動
-                        audioSource.PlayOneShot(audioClip1);
+
+                float vel = rb2d.velocity.x + 7f;
+                GetComponent<Animator>().Play("Swim", 0, vel / 20f);
+                //一回の移動
+                audioSource.PlayOneShot(audioClip1);
                         rb2d.velocity = new Vector3(power * sens2, 0, 0);
                         PressButtonMany++;
+                        
+                muteki = false;
                     }
-                }
             }
 
             if (muteki == true)
@@ -170,6 +170,7 @@ using UnityEngine;
                 audioSource.clip = audioClip2;
                 audioSource.Play();
                 once = true;
+                GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
             }
                 
             this.gameObject.GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
@@ -180,8 +181,10 @@ using UnityEngine;
             }
             if (transform.position.x <= -width) //画面外に出る
             {
-
-                life--;
+                if (muteki == false) //無敵時間じゃなかったら
+                {
+                    life--;
+                }
                 //Destroy(this.transform.transform.GetChild(ObjCount - 1).gameObject);
                 MutekiTime(muteki_time);
 
@@ -200,6 +203,7 @@ using UnityEngine;
             for (int i = 0; i < ObjCount; i++)
             {
                 Fish[i] = this.transform.transform.GetChild(i).gameObject;
+            /*
 
                 if (i % 3 == 0)
                 {
@@ -217,9 +221,18 @@ using UnityEngine;
                     Fish[i].transform.position = iu + new Vector3(-(i - 1) * 0.25f - 0.7f, -(i - 1) * 0.05f - 0.2f, 0);
                     //GameObject made = Instantiate(fish, iu + new Vector3(-(ObjCount - 2), -(ObjCount - 2), 0), Quaternion.identity, Stage);
                 }
+            */
             }
 
         }
+
+    public bool opening;
+
+
+    public void OpeningFinish()
+    {
+        opening = true;
+    }
 
         void OnDataReceivedd(string message)
         {
@@ -337,7 +350,7 @@ using UnityEngine;
             this.transform.parent = null;
             muteki = true;
             //animator.SetBool("muteki", true);
-            this.transform.position = new Vector3(0, 0, 0);
+            //this.transform.position = new Vector3(0, 0, 0);
             Invoke("DelayMethod", t);
 
         }

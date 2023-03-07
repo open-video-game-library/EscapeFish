@@ -9,10 +9,10 @@
  
  // データをcsv形式にし、ダウンロード
  function download_data() {
-     let loghead = "id,score,hit_num,hit_rate\n";
+     let loghead = "id,score,getFish,pressButtonMany\n";
      let logdata = "";
      datas.map(function (d) {
-         logdata += d.id + "," + d.score + "," + d.hit_num + "," + d.hit_rate + "\n";
+         logdata += d.id + "," + d.score + "," + d.getFish + "," + d.pressButtonMany + "\n";
      });
  
      const filename = getNow() + ".csv";

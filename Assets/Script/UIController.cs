@@ -22,6 +22,9 @@ public class UIController : MonoBehaviour
     public Text GameOverText;
 
     public GameObject Canvas;
+
+    private bool wentHome = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -78,7 +81,7 @@ public class UIController : MonoBehaviour
             GameOverText.text = n.ToString() + "m";
             
         }
-        Debug.Log(tide);
+        // Debug.Log(tide);
         float sco = score / 100;
         float sco2 = (score - Mathf.FloorToInt(score / 100)*100) / 1;
         text.text = Mathf.FloorToInt(sco).ToString();
@@ -103,8 +106,11 @@ public class UIController : MonoBehaviour
         GameOver.text = "GameOver";
 
         DownloadButton.wakeUp();
+        if (!gameover)
+        {
+            dataManager.postData(Mathf.FloorToInt(score), Player_Move.Get_Fish, Player_Move.PressButtonMany);
+        }
         gameover = true;
-        dataManager.postData(Mathf.FloorToInt(score), Player_Move.Get_Fish, Player_Move.PressButtonMany);
     }
 
     public void Clear()
