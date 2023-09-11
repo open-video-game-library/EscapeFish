@@ -1,5 +1,7 @@
 # EscapeFish
 
+[日本語版README](https://github.com/open-video-game-library/EscapeFish/blob/main/README.md)
+
 EscapeFish is an action game of Small Fish.
 
 Control a small fish and continue to avoid from obstacles and predators.
@@ -55,7 +57,7 @@ Unity2020.3.13f1
 
 ## Licence
 
-This content is licensed under the MIT License.
+This content is licensed under the [MIT License](https://github.com/open-video-game-library/EscapeFish/blob/main/LICENSE).
 
 No sound files such as sound effect and BGM are included in this code because of redistribution.
 
