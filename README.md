@@ -8,9 +8,10 @@ EscapeFishは小さな魚を操作して、障害物や捕食者から逃げ続�
 ![image](https://user-images.githubusercontent.com/63552585/200158066-5d5113bd-adf1-47fe-b5e5-36c57cb3efdf.png)
 
 
-## Contents
+## コンテンツ
 
 ゲーム開始前のステータス変更画面では、小さな魚の上下の移動速度や、加速の強さを変更することができます。
+
 
 ### ルール
 
@@ -25,7 +26,8 @@ EscapeFishは小さな魚を操作して、障害物や捕食者から逃げ続�
 ・キーボード操作
 ![image](https://user-images.githubusercontent.com/63552585/200158147-b25319d4-0b4c-4335-aa00-a335d3ac6f5b.png)
 
-## Features
+
+## 機能
 
 パラメータ調整機能
 
@@ -45,27 +47,18 @@ EscapeFishは小さな魚を操作して、障害物や捕食者から逃げ続�
 コントローラデバイスの提案研究
 - 3種類だけで構成される入力と、定期的に前進を入力しなければならない特性から、簡単なデジタル入力を必要とするコントローラーデバイスの評価に適している。
 
-### 研究利用例
 
--
-
-## Requirement
+## 要件
 
 Unity2020.3.13f1
 
-## Installation
-
--
-
-## Usage
-
--
 
 ## Licence
 
 本コンテンツは、[MITライセンス](https://github.com/open-video-game-library/EscapeFish/blob/main/LICENSE)のもとで利用が許可されています。
 
 再配布のため、このコードにはBGMや効果音などの音声ファイルは含まれていません。
+
 
 ## 引用
 
