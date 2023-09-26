@@ -1,5 +1,5 @@
 # EscapeFish
-[English version README](https://github.com/open-video-game-library/EscapeFish/blob/main/README.EN.md)
+[English version README](https://github.com/open-video-game-library/EscapeFish/blob/main/README.md)
 
 EscapeFishは小さな魚を操作して、障害物や捕食者から逃げ続けるアクションゲームです。
 
