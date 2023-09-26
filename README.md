@@ -1,6 +1,6 @@
 # EscapeFish
 
-[日本語版README](https://github.com/open-video-game-library/EscapeFish/blob/main/README.md)
+[日本語版README](https://github.com/open-video-game-library/EscapeFish/blob/main/README.JP.md)
 
 EscapeFish is an action game of Small Fish.
 
