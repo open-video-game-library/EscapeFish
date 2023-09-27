@@ -24,7 +24,8 @@ EscapeFishは小さな魚を操作して、障害物や捕食者から逃げ続�
 ### 操作方法
 
 ・キーボード操作
-![image](https://user-images.githubusercontent.com/63552585/200158147-b25319d4-0b4c-4335-aa00-a335d3ac6f5b.png)
+![figure_page-0006](https://github.com/open-video-game-library/EscapeFish/assets/63552585/82c9eee3-1362-4e2f-a8dc-ba0c1885ee21)
+
 
 
 ## 機能
