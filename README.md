@@ -25,7 +25,7 @@ Tasks:
 
 ### Controls
 
-・Keyboard Controls:
+・Keyboard Controls:<br>
 <img src="https://github.com/open-video-game-library/EscapeFish/assets/63552585/c431ce79-38a6-4fdb-b1d5-b03422a7810a" width="50%" />
 
 
