@@ -6,7 +6,8 @@ EscapeFish is an action game of Small Fish.
 
 Control a small fish and continue to avoid from obstacles and predators.
 
-![figure_page-0005](https://github.com/open-video-game-library/EscapeFish/assets/63552585/c23598e2-f259-4097-a08d-e33958e35128)
+
+![200158066-5d5113bd-adf1-47fe-b5e5-36c57cb3efdf](https://github.com/open-video-game-library/EscapeFish/assets/63552585/0f4f2a12-fb71-46d8-ac5d-51d8526c0e5a)
 
 
 ## Contents
@@ -25,7 +26,7 @@ Tasks:
 ### Controls
 
 ・Keyboard Controls:
-![image](https://user-images.githubusercontent.com/63552585/200158147-b25319d4-0b4c-4335-aa00-a335d3ac6f5b.png)
+![figure_page-0005](https://github.com/open-video-game-library/EscapeFish/assets/63552585/c431ce79-38a6-4fdb-b1d5-b03422a7810a)
 
 
 ## Features
