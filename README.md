@@ -58,33 +58,14 @@ Unity2020.3.13f1
 
 ## Licence
 
-This content is licensed under the [MIT License](https://github.com/open-video-game-library/EscapeFish/blob/main/LICENSE).
+This content is licensed under the [MIT License](https://github.com/open-video-game-library/EscapeFish/blob/main/LICENSE.md).
 
 No sound files such as sound effect and BGM are included in this code because of redistribution.
 
-## Citation
+## Use in Research
 
-研究利用しやすく標準性を目指したビデオゲームの設計と開発
+[Recommendations for research use of this content](https://github.com/open-video-game-library/EscapeFish/blob/main/RESEARCH_USE.md)
 
-Design and development of video games aimed at accessible to researchers and standardization.
-
-[Click here for the paper page.](http://id.nii.ac.jp/1001/00212465/)
- 
-```
-@inproceedings{weko_212571_1,
-   author	 = "拓也,岡 and 拓也,川島 and 大智,林 and 恵太,渡邊",
-   title	 = "研究利用しやすく標準性を目指したビデオゲームの設計と開発",
-   booktitle	 = "エンタテインメントコンピューティングシンポジウム論文集",
-   year 	 = "2021",
-   volume	 = "2021",
-   number	 = "",
-   pages	 = "181--186",
-   month	 = "aug"
-}
-```
-```
-BiBTeX
-```
  
 ## Contact
 
