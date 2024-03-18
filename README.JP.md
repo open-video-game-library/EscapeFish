@@ -8,7 +8,7 @@ EscapeFishは小さな魚を操作して、障害物や捕食者から逃げ続�
 ![image](https://user-images.githubusercontent.com/63552585/200158066-5d5113bd-adf1-47fe-b5e5-36c57cb3efdf.png)
 
 
-## コンテンツ
+## Contents
 
 ゲーム開始前のステータス変更画面では、小さな魚の上下の移動速度や、加速の強さを変更することができます。
 
@@ -28,7 +28,7 @@ EscapeFishは小さな魚を操作して、障害物や捕食者から逃げ続�
 
 
 
-## 機能
+## Features
 
 パラメータ調整機能
 
@@ -49,38 +49,21 @@ EscapeFishは小さな魚を操作して、障害物や捕食者から逃げ続�
 - 3種類だけで構成される入力と、定期的に前進を入力しなければならない特性から、簡単なデジタル入力を必要とするコントローラーデバイスの評価に適している。
 
 
-## 要件
+## Requirement
 
 Unity2020.3.13f1
 
 
 ## Licence
 
-本コンテンツは、[MITライセンス](https://github.com/open-video-game-library/EscapeFish/blob/main/LICENSE)のもとで利用が許可されています。
+本コンテンツは、[MITライセンス](https://github.com/open-video-game-library/EscapeFish/blob/main/LICENSE.md)のもとで利用が許可されています。
 
 再配布のため、このコードにはBGMや効果音などの音声ファイルは含まれていません。
 
 
-## 引用
+## Use in Research
 
-研究利用しやすく標準性を目指したビデオゲームの設計と開発
-
-[論文はこちら](http://id.nii.ac.jp/1001/00212465/)
-```
-@inproceedings{weko_212571_1,
-   author	 = "拓也,岡 and 拓也,川島 and 大智,林 and 恵太,渡邊",
-   title	 = "研究利用しやすく標準性を目指したビデオゲームの設計と開発",
-   booktitle	 = "エンタテインメントコンピューティングシンポジウム論文集",
-   year 	 = "2021",
-   volume	 = "2021",
-   number	 = "",
-   pages	 = "181--186",
-   month	 = "aug"
-}
-```
-```
-BiBTeX
-```
+[本コンテンツを研究利用する場合の推奨事項](https://github.com/open-video-game-library/EscapeFish/blob/main/RESEARCH_USE.JP.md)
 
 ## お問い合わせ
 
